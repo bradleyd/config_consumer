@@ -1,0 +1,85 @@
+# Logfile created on 2014-10-06 21:39:29 -0600 by logger.rb/44203
+I, [2014-10-06T21:39:29.718654 #29017]  INFO -- : *** Below you'll find the most recent exception thrown, this will likely (but not certainly) be the exception that made your application exit abnormally ***
+E, [2014-10-06T21:39:29.718704 #29017] ERROR -- : exit (SystemExit)
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/runner.rb:38:in `exit'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/runner.rb:38:in `invoke'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/exe/rspec:4:in `<top (required)>'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/bin/rspec:23:in `load'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/bin/rspec:23:in `<main>'
+I, [2014-10-06T21:39:29.718756 #29017]  INFO -- : *** Below you'll find all the exception objects in memory, some of them may have been thrown in your application, others may just be in memory because they are standard exceptions ***
+E, [2014-10-06T21:39:29.720115 #29017] ERROR -- : stream closed (IOError)
+
+E, [2014-10-06T21:39:29.720237 #29017] ERROR -- : failed to allocate memory (NoMemoryError)
+
+E, [2014-10-06T21:39:29.720289 #29017] ERROR -- : stack level too deep (SystemStackError)
+
+E, [2014-10-06T21:39:29.720478 #29017] ERROR -- : exception reentered (fatal)
+
+E, [2014-10-06T21:39:29.721580 #29017] ERROR -- : cannot load such file -- bundler/setup (LoadError)
+/home/bradleyd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+/home/bradleyd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+/home/bradleyd/Projects/config_consumer/config/boot.rb:7:in `<top (required)>'
+/home/bradleyd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+/home/bradleyd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+/home/bradleyd/Projects/config_consumer/config/environment.rb:7:in `<top (required)>'
+/home/bradleyd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+/home/bradleyd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+/home/bradleyd/Projects/config_consumer/spec/spec_helper.rb:10:in `<top (required)>'
+/home/bradleyd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+/home/bradleyd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+/home/bradleyd/Projects/config_consumer/spec/config_writer_spec.rb:1:in `<top (required)>'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/configuration.rb:1105:in `load'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/configuration.rb:1105:in `block in load_spec_files'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/configuration.rb:1105:in `each'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/configuration.rb:1105:in `load_spec_files'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/runner.rb:96:in `setup'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/runner.rb:84:in `run'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/runner.rb:69:in `run'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/runner.rb:37:in `invoke'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/exe/rspec:4:in `<top (required)>'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/bin/rspec:23:in `load'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/bin/rspec:23:in `<main>'
+E, [2014-10-06T21:39:29.723918 #29017] ERROR -- : No such file or directory @ rb_sysopen - /home/bradleyd/Projects/config_consumer/log/backtrace-20141006213929-29017.log (Errno::ENOENT)
+/home/bradleyd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/logger.rb:592:in `initialize'
+/home/bradleyd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/logger.rb:592:in `open'
+/home/bradleyd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/logger.rb:592:in `open_logfile'
+/home/bradleyd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/logger.rb:549:in `initialize'
+/home/bradleyd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/logger.rb:318:in `new'
+/home/bradleyd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/logger.rb:318:in `initialize'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/safely-0.3.2/lib/safely/backtrace.rb:24:in `new'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/safely-0.3.2/lib/safely/backtrace.rb:24:in `log_exceptions'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/safely-0.3.2/lib/safely/backtrace.rb:10:in `block in enable!'
+E, [2014-10-06T21:39:29.724007 #29017] ERROR -- : exit (SystemExit)
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/runner.rb:38:in `exit'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/runner.rb:38:in `invoke'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/exe/rspec:4:in `<top (required)>'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/bin/rspec:23:in `load'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/bin/rspec:23:in `<main>'
+E, [2014-10-06T21:39:29.724100 #29017] ERROR -- : 
+expected true
+     got false
+ (RSpec::Expectations::ExpectationNotMetError)
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-expectations-3.1.2/lib/rspec/expectations/fail_with.rb:30:in `fail_with'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-expectations-3.1.2/lib/rspec/expectations/handler.rb:37:in `handle_failure'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-expectations-3.1.2/lib/rspec/expectations/handler.rb:48:in `handle_matcher'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-expectations-3.1.2/lib/rspec/expectations/expectation_target.rb:54:in `to'
+/home/bradleyd/Projects/config_consumer/spec/config_writer_spec.rb:12:in `block (2 levels) in <top (required)>'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/example.rb:151:in `instance_exec'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/example.rb:151:in `block in run'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/example.rb:328:in `with_around_example_hooks'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/example.rb:148:in `run'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/example_group.rb:500:in `block in run_examples'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/example_group.rb:496:in `map'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/example_group.rb:496:in `run_examples'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/example_group.rb:463:in `run'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/runner.rb:111:in `block (2 levels) in run_specs'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/runner.rb:111:in `map'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/runner.rb:111:in `block in run_specs'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/reporter.rb:53:in `report'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/runner.rb:107:in `run_specs'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/runner.rb:85:in `run'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/runner.rb:69:in `run'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/lib/rspec/core/runner.rb:37:in `invoke'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/gems/rspec-core-3.1.5/exe/rspec:4:in `<top (required)>'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/bin/rspec:23:in `load'
+/home/bradleyd/.rvm/gems/ruby-2.1.2@wameku_config_consumer/bin/rspec:23:in `<main>'

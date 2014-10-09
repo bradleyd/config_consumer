@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+#
+# Stub executable for config_consumer
+#
+
+require File.expand_path('../../config/environment',  __FILE__)
+
+DaemonKit::Application.exec( DAEMON_ROOT + '/libexec/config_consumer-daemon.rb' )

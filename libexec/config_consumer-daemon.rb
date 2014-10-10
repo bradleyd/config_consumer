@@ -6,7 +6,7 @@ DaemonKit::Application.running! do |config|
   config.trap( 'TERM', Proc.new { puts 'Going down' } )
 end
 
-@account_uuid = #gets set during container creation
+@account_uuid = ACCOUNT_UID["uuid"]
 
 # Run an event-loop for processing
 DaemonKit::AMQP.run do |connection|
@@ -15,7 +15,7 @@ DaemonKit::AMQP.run do |connection|
     client.reconnect(false, 1)
   end
 
-  channel      = AMQP::Channel.new(connection,AMQP::Channel.next_channel_id, :auto_recovery => true)
+  channel      = AMQP::Channel.new(connection, :auto_recovery => true)
   channel.prefetch(1)
   exchange     = channel.direct("amq.direct")
   queue    = channel.queue("handlers", 
@@ -57,7 +57,7 @@ DaemonKit::AMQP.run do |connection|
   
   # check queue basic info
   queue.status { |number_of_messages, number_of_active_consumers|
-    DaemonKit.logger.info "Listening on Queue: #{AGE_BUCKET["queue"]}"
+    DaemonKit.logger.info "Listening on Queue: handler"
     @messages = number_of_messages
 
   }

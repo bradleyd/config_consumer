@@ -8,7 +8,7 @@ require File.join(File.dirname(__FILE__), 'boot')
 
 # Auto-require default libraries and those for the current ruby environment.
 Bundler.require :default, DaemonKit.env
-
+ACCOUNT_UID = DaemonKit::Config.load("account")
 DaemonKit::Initializer.run do |config|
 
   # The name of the daemon as reported by process monitoring tools

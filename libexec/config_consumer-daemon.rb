@@ -1,3 +1,4 @@
+require 'json'
 # Generated amqp daemon
 DaemonKit::Application.running! do |config|
   config.trap( 'INT' ) do
@@ -64,14 +65,15 @@ DaemonKit::AMQP.run do |connection|
 
   # subscribe to the queue and do work
   queue.subscribe(:ack => true) do |meta, msg|
+    DaemonKit.logger.info msg
     message = JSON.parse(msg)
     # payload should have a type, name, payload
     writer = ConfigConsumer::Writer.new(:handler, message["name"], message["payload"])
     if writer.save
       #HUP sensu?
-      #meta.ack
+      meta.ack
     else
-      #meta.reject
+      meta.reject
     end
     DaemonKit.logger.debug "Received message: #{msg.inspect}"
 

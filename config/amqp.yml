@@ -15,7 +15,9 @@
 defaults: &defaults
   user: guest
   pass: guest
-  host: localhost
+  ssl: true
+  port: 5671
+  host: foo
   vhost: /
 
 development:

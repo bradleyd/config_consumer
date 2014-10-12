@@ -1,6 +1,6 @@
 module ConfigConsumer
   class Writer
-    SENSU_PLUGIN_DIR = "/etc/sensu/conf.d/handlers"
+    SENSU_CONF_DIR = "/etc/sensu/conf.d"
     def initialize(type, name, payload)
       @type = type
       @name = name
@@ -10,10 +10,10 @@ module ConfigConsumer
     def save
       #verify json and write to disk
       #default directory should be /etc/sensu/conf.d/handlers
-      File.open("SENSU_PLUGIN_DIR/#{name}_handler.json", "w") { |f|
-        f.write payload
+      File.open("#{SENSU_CONF_DIR}/#{@name}_config.json", "w") { |f|
+        f.write JSON.generate(@payload)
       }
-      File.exists?("SENSU_PLUGIN_DIR/#{name}_handler.json")
+      File.exists?("#{SENSU_CONF_DIR}/#{@name}_config.json")
     end
   end
   

@@ -71,6 +71,8 @@ DaemonKit::AMQP.run do |connection|
     writer = ConfigConsumer::Writer.new(:handler, message["name"], message["payload"])
     if writer.save
       #HUP sensu?
+      results = `/etc/init.d/sensu-server restart`
+      DaemonKit.logger.debug results
       meta.ack
     else
       meta.reject
